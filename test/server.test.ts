@@ -10,7 +10,8 @@ test("keeps the public stdio server entrypoint present", () => {
 
 test("serves document inspection over a real stdio MCP connection", async () => {
   const serverPath = new URL("../src/index.ts", import.meta.url).pathname;
-  const fixturePath = new URL("./fixtures/document.json", import.meta.url).pathname;
+  const fixturePath = new URL("./fixtures/document.json", import.meta.url)
+    .pathname;
   const transport = new StdioClientTransport({
     command: process.execPath,
     args: ["run", serverPath],
@@ -22,7 +23,9 @@ test("serves document inspection over a real stdio MCP connection", async () => 
   try {
     await client.connect(transport);
     const listed = await client.listTools();
-    expect(listed.tools.map((tool) => tool.name)).toContain("brings_inspect_document");
+    expect(listed.tools.map((tool) => tool.name)).toContain(
+      "brings_inspect_document",
+    );
 
     const result = await client.callTool({
       name: "brings_inspect_document",
