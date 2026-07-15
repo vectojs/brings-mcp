@@ -1,0 +1,17 @@
+name: Bug report
+description: Report a reproducible Brings MCP defect
+labels: [bug]
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include sanitized JSON-RPC input, expected result, and actual result.
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: MCP client and server version
+    validations:
+      required: true
