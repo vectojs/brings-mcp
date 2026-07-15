@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a local-first Brings MCP capability
+labels: [enhancement]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Proposed workflow
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Document mutation and compatibility impact
+    validations:
+      required: true
