@@ -16,7 +16,7 @@
   },
   "homepage": "https://brings-website.vectojs.org/",
   "bin": {
-    "brings-mcp": "./src/index.ts"
+    "brings-mcp": "src/index.ts"
   },
   "files": [
     "src",
