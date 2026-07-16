@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0
+
+### Minor Changes
+
+- 436942c: Add nine revision-protected design mutation tools, stable result envelopes,
+  dry-run replay, and atomic sidecar-locked document transactions.
+
 All notable changes to this project are documented in this file.
 
 ## Unreleased
