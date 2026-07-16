@@ -11,6 +11,11 @@ All notable changes to this project are documented in this file.
 
 ## Unreleased
 
+### Fixed
+
+- Make the published `brings-mcp` executable directly launchable through its
+  npm-installed binary shim.
+
 ### Minor Changes
 
 - Add nine strict intention-level mutation tools backed by Brings Core.
