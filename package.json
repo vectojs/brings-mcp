@@ -34,7 +34,7 @@
     "changeset:version": "changeset version"
   },
   "dependencies": {
-    "@vectojs/brings-core": "0.13.0",
+    "@vectojs/brings-core": "0.15.0",
     "@modelcontextprotocol/sdk": "1.29.0",
     "zod": "4.4.3"
   },
